@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.resources.getAccessToken</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-08-02 01:52:26 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:11]">[1:11] Get the Access Token </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/resources/getAccessToken.feature</span><span class="feature-description">RSA Api</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:11]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:11]</span><span class="scenario-name">Get the Access Token </span>
+</div>
+<div class="scenario-time passed">ms: 1728</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:11]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* configure ssl = true</div>
+</div>
+<div class="time-cell passed">525</div>
+</div>
+<div class="preformatted" data-parent="1">01:52:24.876 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container">
+<div class="step-ref bg-step"></div>
+<div class="step-cell comment">#Given url 'https://www.googleapis.com/oauth2/v4/token?code=4%2F2gHZN_S2L7jbb41XmlbatXpC-UwZOnb-BvEEywCxeCIOLgONfcQF12Q95uc5VZ9ND6FpE2IzZ3omaqM4hmXZJYs'</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">And param client_id = '692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">And param client_secret = 'erZOWM9g3UtwNRj340YYaK_W'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-cell passed">And param redirect_uri = 'https://rahulshettyacademy.com/getCourse.php'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-cell passed">And param grant_type = 'authorization_code'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">Given url 'https://www.googleapis.com/oauth2/v4/token?code=4%2F2gEKyMGbQdrBFX4YsFp94HfT8OL8GY7l9kBAS9Y2cjG5hHtLIQ-xZTXUCtn4RcophFk_WnzVcI--IKoshHuwCME'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And request ''</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1144</div>
+</div>
+<div class="preformatted" data-parent="8">01:52:25.697 request:
+1 &gt; POST https://www.googleapis.com/oauth2/v4/token?code=4%2F2gEKyMGbQdrBFX4YsFp94HfT8OL8GY7l9kBAS9Y2cjG5hHtLIQ-xZTXUCtn4RcophFk_WnzVcI--IKoshHuwCME&amp;client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com&amp;client_secret=erZOWM9g3UtwNRj340YYaK_W&amp;redirect_uri=https%3A%2F%2Frahulshettyacademy.com%2FgetCourse.php&amp;grant_type=authorization_code
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 0
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Host: www.googleapis.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+
+
+01:52:26.542 response time in milliseconds: 841.03
+1 &lt; 200
+1 &lt; Alt-Svc: h3-29=":443"; ma=2592000,h3-27=":443"; ma=2592000,h3-T050=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+1 &lt; Cache-Control: private
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 01 Aug 2020 20:22:29 GMT
+1 &lt; Server: scaffolding on HTTPServer2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: [Origin, X-Origin, Referer]
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 0
+{
+  "access_token": "ya29.a0AfH6SMDTx_tvGmWlngpH8rtb332FrirIU2vD8mZE728mj15Hh4IU9AjkibbsAOIeJ0amsfoyVVORFg77XBGJluEQ2TEioSurYg5pBOrP-CSgpQSLqgFfF-zrdfxmqcEYWBm2_AJgz5uRcOCvmGMaUiWJbR9IVQ-nym6GBg",
+  "expires_in": 3562,
+  "scope": "https://www.googleapis.com/auth/userinfo.email openid",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImYwNTQxNWIxM2FjYjk1OTBmNzBkZjg2Mjc2NWM2NTVmNWE3YTAxOWUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI2OTIxODMxMDMxMDctcDBtN2VudDJoazdzdWd1djR2cTIyaGpjZmhjcjQzcGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI2OTIxODMxMDMxMDctcDBtN2VudDJoazdzdWd1djR2cTIyaGpjZmhjcjQzcGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTgzMTQzMTUyMjYwNDk0NzgzMjgiLCJlbWFpbCI6Imd1cnVwcmFzYWRncC45M0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IlBZRm1CeS0zVDVBcVpVLVZYRFRvOHciLCJpYXQiOjE1OTYzMTMzNDksImV4cCI6MTU5NjMxNjk0OX0.uAx43bGZaN779W7QqNAYGkEbvrZlgy8XLzmgVNMIX-ByA5VjsLUm98m2pFCEsZVrn0wpbdWj8DfUjQjyKQItu1LLqWeX3c0eznAz2KhV6kzCztGpGc2pc6Ggzsoqq-hr-A1PI4uRdVBX-nAwwdHoEImFcqRAIBKTqTNdPVC-vKdpfFAShCnJKNOQQV0bLQfdPPsbY3o5cMIG_td2n0s2ApL830FXUiFK5sctPxy_3ITySfHWnyv2bRTjaT7KHX2Z5Fsktd8T4k22a0HzUuptmTxWzkb9sJVpQMYGc6frCZLVps8WXa591Oq9kjLYmtFPTQxJ3J6D4OUWSbi7XLxcjg"
+}</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">16</div>
+</div>
+<div class="preformatted" data-parent="9">01:52:26.611 [print] {
+  "access_token": "ya29.a0AfH6SMDTx_tvGmWlngpH8rtb332FrirIU2vD8mZE728mj15Hh4IU9AjkibbsAOIeJ0amsfoyVVORFg77XBGJluEQ2TEioSurYg5pBOrP-CSgpQSLqgFfF-zrdfxmqcEYWBm2_AJgz5uRcOCvmGMaUiWJbR9IVQ-nym6GBg",
+  "scope": "https://www.googleapis.com/auth/userinfo.email openid",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImYwNTQxNWIxM2FjYjk1OTBmNzBkZjg2Mjc2NWM2NTVmNWE3YTAxOWUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI2OTIxODMxMDMxMDctcDBtN2VudDJoazdzdWd1djR2cTIyaGpjZmhjcjQzcGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI2OTIxODMxMDMxMDctcDBtN2VudDJoazdzdWd1djR2cTIyaGpjZmhjcjQzcGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTgzMTQzMTUyMjYwNDk0NzgzMjgiLCJlbWFpbCI6Imd1cnVwcmFzYWRncC45M0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IlBZRm1CeS0zVDVBcVpVLVZYRFRvOHciLCJpYXQiOjE1OTYzMTMzNDksImV4cCI6MTU5NjMxNjk0OX0.uAx43bGZaN779W7QqNAYGkEbvrZlgy8XLzmgVNMIX-ByA5VjsLUm98m2pFCEsZVrn0wpbdWj8DfUjQjyKQItu1LLqWeX3c0eznAz2KhV6kzCztGpGc2pc6Ggzsoqq-hr-A1PI4uRdVBX-nAwwdHoEImFcqRAIBKTqTNdPVC-vKdpfFAShCnJKNOQQV0bLQfdPPsbY3o5cMIG_td2n0s2ApL830FXUiFK5sctPxy_3ITySfHWnyv2bRTjaT7KHX2Z5Fsktd8T4k22a0HzUuptmTxWzkb9sJVpQMYGc6frCZLVps8WXa591Oq9kjLYmtFPTQxJ3J6D4OUWSbi7XLxcjg",
+  "token_type": "Bearer",
+  "expires_in": 3562
+}</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">And def token = response.access_token</div>
+</div>
+<div class="time-cell passed">21</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">And print token</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="12">01:52:26.633 [print] ya29.a0AfH6SMDTx_tvGmWlngpH8rtb332FrirIU2vD8mZE728mj15Hh4IU9AjkibbsAOIeJ0amsfoyVVORFg77XBGJluEQ2TEioSurYg5pBOrP-CSgpQSLqgFfF-zrdfxmqcEYWBm2_AJgz5uRcOCvmGMaUiWJbR9IVQ-nym6GBg</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
