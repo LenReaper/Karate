@@ -1,0 +1,84 @@
+<testsuite failures="0" name="src/test/resources/employee.feature" skipped="0" tests="4" time="10.254479">
+  <testcase classname="src.test.resources.employee" name="Create employee data using rest" time="8.061016">
+    <system-out>* configure ssl = true .................................................... passed
+Given url 'http://dummy.restapiexample.com/api/v1/create' ................. passed
+And json req = '{    "status": "success",    "data": {        "name": "dev",        "salary": "29000",        "age": "26",        "id": 29    }}' . passed
+And request req ........................................................... passed
+And print req ............................................................. passed
+When method Post .......................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.employee" name="Get single employee data" time="1.018888">
+    <system-out>* configure ssl = true .................................................... passed
+Given url 'http://dummy.restapiexample.com/api/v1/create' ................. passed
+And json req = '{    "status": "success",    "data": {        "name": "dev",        "salary": "29000",        "age": "26",        "id": 29    }}' . passed
+And request req ........................................................... passed
+And print req ............................................................. passed
+When method Post .......................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+* configure ssl = true .................................................... passed
+Given url 'http://dummy.restapiexample.com/api/v1/employee' ............... passed
+And path id = '20' ........................................................ passed
+And request '' ............................................................ passed
+When method Get ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.employee" name="Get all employee data" time="0.139141">
+    <system-out>* configure ssl = true .................................................... passed
+Given url 'http://dummy.restapiexample.com/api/v1/create' ................. passed
+And json req = '{    "status": "success",    "data": {        "name": "dev",        "salary": "29000",        "age": "26",        "id": 29    }}' . passed
+And request req ........................................................... passed
+And print req ............................................................. passed
+When method Post .......................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+* configure ssl = true .................................................... passed
+Given url 'http://dummy.restapiexample.com/api/v1/employee' ............... passed
+And path id = '20' ........................................................ passed
+And request '' ............................................................ passed
+When method Get ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+* configure ssl = true .................................................... passed
+Given url 'http://dummy.restapiexample.com/api/v1/employees' .............. passed
+And request '' ............................................................ passed
+When method Get ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+And assert response.data[13].employee_name == 'Haley Kennedy' ............. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.employee" name="Delete employee data" time="1.035434">
+    <system-out>* configure ssl = true .................................................... passed
+Given url 'http://dummy.restapiexample.com/api/v1/create' ................. passed
+And json req = '{    "status": "success",    "data": {        "name": "dev",        "salary": "29000",        "age": "26",        "id": 29    }}' . passed
+And request req ........................................................... passed
+And print req ............................................................. passed
+When method Post .......................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+* configure ssl = true .................................................... passed
+Given url 'http://dummy.restapiexample.com/api/v1/employee' ............... passed
+And path id = '20' ........................................................ passed
+And request '' ............................................................ passed
+When method Get ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+* configure ssl = true .................................................... passed
+Given url 'http://dummy.restapiexample.com/api/v1/employees' .............. passed
+And request '' ............................................................ passed
+When method Get ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+And assert response.data[13].employee_name == 'Haley Kennedy' ............. passed
+* configure ssl = true .................................................... passed
+Given url 'http://dummy.restapiexample.com/api/v1/delete' ................. passed
+And path id = 29 .......................................................... passed
+And request '' ............................................................ passed
+When method Delete ........................................................ passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
